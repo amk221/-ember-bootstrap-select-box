@@ -1,5 +1,14 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{#bs-form onSubmit=(action "submit") model=model as |form|}}
 
-{{outlet}}
+  {{form.element
+    controlType="single-select"
+    property="thing"
+    label="Thing"
+    options=(hash
+      array=things
+      labelKey="name"
+    )}}
+
+  {{bs-button defaultText="Submit" type="primary" buttonType="submit"}}
+
+{{/bs-form}}

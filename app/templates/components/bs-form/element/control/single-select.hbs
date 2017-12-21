@@ -1,0 +1,7 @@
+{{#select-box/native value=value on-select=(action onChange) as |sb|}}
+  {{#each options.array as |item|}}
+    {{#sb.option value=item}}
+      {{get item options.labelKey}}
+    {{/sb.option}}
+  {{/each}}
+{{/select-box/native}}

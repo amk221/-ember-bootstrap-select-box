@@ -1,5 +1,9 @@
 # ember-bootstrap-select-box
 
+Demo repo for https://github.com/amk221/ember-select-box/issues/14
+
+<hr>
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
